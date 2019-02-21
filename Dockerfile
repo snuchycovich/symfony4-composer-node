@@ -12,4 +12,5 @@ RUN apt-get update \
     && docker-php-ext-install zip \
     && apt-get install unzip \
     && docker-php-ext-install pdo_mysql \
-    && a2enmod rewrite
+    && a2enmod rewrite \
+    && apt-get install git-core
